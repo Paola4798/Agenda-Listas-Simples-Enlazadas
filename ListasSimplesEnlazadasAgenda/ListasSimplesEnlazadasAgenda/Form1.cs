@@ -89,7 +89,7 @@ namespace ListasSimplesEnlazadasAgenda
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             if (txtCodigo.Text == "")
-                MessageBox.Show("Favor de escribir el código del producto a eliminar.");
+                MessageBox.Show("Favor de escribir el código del contacto a eliminar.");
             else
             {
                 if (contactos.eliminar(Convert.ToInt16(txtCodigo.Text)))
@@ -106,7 +106,7 @@ namespace ListasSimplesEnlazadasAgenda
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             if (txtCodigo.Text == "")
-                MessageBox.Show("Favor de escribir el código del producto a buscar.");
+                MessageBox.Show("Favor de escribir el código del contacto a buscar.");
             else
                 txtShow.Text = contactos.buscar(Convert.ToInt16(txtCodigo.Text)).ToString();
             limpiarTXT();
